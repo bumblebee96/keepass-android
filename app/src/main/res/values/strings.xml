@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">keepassAndroid</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="unlock">Unlock</string>
+    <string name="lock">Lock</string>
+
+    <string name="app_title">KeePass Android</string>
+    <string name="database_password_textbox">password</string>
+    <string name="database_filepath_textbox">/home/Downloads/Database.kdbx</string>
+    <string name="browse">Browse</string>
+</resources>

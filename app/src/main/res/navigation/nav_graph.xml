@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/LockScreen">
+
+    <fragment
+        android:id="@+id/LockScreen"
+        android:name="com.example.keepassandroid.FirstFragment"
+        android:label="@string/app_title"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/unlockDatabase"
+            app:destination="@id/UnlockScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/UnlockScreen"
+        android:name="com.example.keepassandroid.SecondFragment"
+        tools:layout="@layout/fragment_second">
+
+        <action
+            android:id="@+id/lockDatabase"
+            app:destination="@id/LockScreen" />
+        <argument
+            android:name="password"
+            app:argType="string" />
+    </fragment>
+</navigation>
